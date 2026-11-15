@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Método Constância | Stéfani Gusmão, Nutrição Estratégica de Alta Performance</title>
+  <meta name="description" content="Método Constância: 3 meses de acompanhamento nutricional para emagrecer de verdade e ganhar massa muscular, com estratégia, ajustes e alguém olhando para o seu processo. Stéfani Gusmão, nutricionista CRN3 42566, São José dos Campos."/>
+  <meta property="og:title" content="Método Constância | Stéfani Gusmão"/>
+  <meta property="og:description" content="Emagrecer de verdade e construir músculo, sem recomeçar toda segunda-feira. 3 meses de acompanhamento nutricional estratégico."/>
+  <meta property="og:image" content="https://nutristefanigusmao.com.br/metodo-constancia/img/stefani-hero.jpg"/>
+  <meta property="og:url" content="https://nutristefanigusmao.com.br/metodo-constancia/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#003152"/>
+  <link rel="canonical" href="https://nutristefanigusmao.com.br/metodo-constancia/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Mono:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --petroleo:  #003152;
+      --petroleo2: #00243D;
+      --terracota: #AF4E2E;
+      --terra-esc: #943F23;
+      --bege:      #E7E3DA;
+      --creme:     #F7F4EE;
+      --texto:     #26303A;
+      --muted:     #6B6F72;
+      --linha:     rgba(175,78,46,0.22);
+      --serif: 'Classic Roman Std', 'Cormorant Garamond', Georgia, serif;
+      --mono:  'DM Mono', ui-monospace, monospace;
+      --sans:  'Jost', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--creme);
+      color: var(--texto);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 40px; }
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--terracota);
+      margin-bottom: 20px;
+    }
+    .eyebrow--light { color: #D9A48C; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.12; color: var(--petroleo); }
+    h2 { font-size: clamp(34px, 4.4vw, 54px); margin-bottom: 24px; }
+    h2 em, h1 em { font-style: italic; color: var(--terracota); }
+    .lead { font-size: 18px; color: var(--muted); max-width: 640px; }
+
+    /* Botões */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      font-family: var(--sans); font-weight: 500;
+      font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+      text-decoration: none; padding: 18px 30px;
+      transition: background .25s ease, color .25s ease, border-color .25s ease, transform .25s ease;
+      border: 1px solid transparent; cursor: pointer;
+    }
+    .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .btn--fill { background: var(--terracota); color: #fff; }
+    .btn--fill:hover { background: var(--terra-esc); transform: translateY(-2px); }
+    .btn--ghost { border-color: rgba(231,227,218,0.45); color: var(--bege); }
+    .btn--ghost:hover { border-color: var(--bege); background: rgba(231,227,218,0.08); }
+    .btn--outline { border-color: var(--petroleo); color: var(--petroleo); }
+    .btn--outline:hover { background: var(--petroleo); color: var(--bege); }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--petroleo);
+      border-bottom: 1px solid rgba(231,227,218,0.08);
+    }
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .nav__logo img { height: 52px; width: auto; }
+    .nav__links { display: flex; gap: 34px; list-style: none; }
+    .nav__links a {
+      font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
+      color: rgba(231,227,218,0.65); text-decoration: none; transition: color .2s;
+    }
+    .nav__links a:hover { color: #fff; }
+    nav .btn { padding: 13px 22px; font-size: 11px; }
+
+    /* FAIXA BLACK (remover depois de 27/11) */
+    .black {
+      background: #0E0E0E; color: var(--bege);
+      text-align: center; padding: 14px 20px;
+      font-size: 14px; letter-spacing: 0.02em;
+    }
+    .black strong { font-weight: 500; color: #fff; }
+    .black a { color: #E8A386; font-weight: 500; text-underline-offset: 3px; }
+    .black .tag {
+      font-family: var(--mono); font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+      border: 1px solid rgba(232,163,134,.5); color: #E8A386; padding: 3px 8px; margin-right: 10px;
+    }
+
+    /* HERO */
+    .hero { background: var(--petroleo); color: var(--bege); position: relative; overflow: hidden; }
+    .hero::before {
+      content: ''; position: absolute; left: -120px; bottom: -160px; width: 420px; height: 420px;
+      border-radius: 50%; border: 1px solid rgba(217,164,140,0.16); pointer-events: none;
+    }
+    .hero .wrap {
+      display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center;
+      padding-top: 88px; padding-bottom: 88px;
+    }
+    .hero h1 { color: #fff; font-size: clamp(40px, 5.4vw, 68px); font-weight: 300; margin-bottom: 28px; }
+    .hero h1 em { color: #E8A386; }
+    .hero__sub { font-size: 18px; color: rgba(231,227,218,0.75); max-width: 540px; margin-bottom: 40px; }
+    .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero__meta {
+      display: flex; gap: 36px; flex-wrap: wrap; margin-top: 52px; padding-top: 28px;
+      border-top: 1px solid rgba(231,227,218,0.12);
+    }
+    .hero__meta div { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; color: rgba(231,227,218,.6); }
+    .hero__meta b { display: block; font-family: var(--serif); font-weight: 400; font-size: 30px; color: #fff; letter-spacing: 0; line-height: 1.1; }
+    .hero__photo { position: relative; }
+    .hero__photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 20%; }
+    .hero__photo::after {
+      content: ''; position: absolute; inset: 22px -22px -22px 22px;
+      border: 1px solid rgba(217,164,140,0.45); z-index: -1;
+    }
+    .hero__photo { z-index: 1; }
+
+    /* DORES */
+    .dores { padding: 110px 0; }
+    .dores__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--linha); border: 1px solid var(--linha); margin-top: 56px; }
+    .dor { background: var(--creme); padding: 40px 34px; }
+    .dor__n { font-family: var(--mono); font-size: 12px; color: var(--terracota); letter-spacing: .2em; margin-bottom: 18px; }
+    .dor h3 { font-size: 25px; margin-bottom: 12px; }
+    .dor p { font-size: 15px; color: var(--muted); }
+    .dores__fecho {
+      margin-top: 56px; font-family: var(--serif); font-style: italic;
+      font-size: clamp(24px, 2.8vw, 34px); color: var(--petroleo); max-width: 820px; line-height: 1.3;
+    }
+    .dores__fecho span { color: var(--terracota); }
+
+    /* VIRADA / CIÊNCIA */
+    .virada { background: var(--bege); padding: 110px 0; }
+    .virada .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 72px; align-items: center; }
+    .virada__img img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .virada p { color: var(--muted); margin-bottom: 18px; max-width: 560px; }
+    .evid { margin-top: 34px; display: grid; gap: 14px; }
+    .evid__item { background: #fff; padding: 22px 24px; border-left: 2px solid var(--terracota); }
+    .evid__item p { margin: 0; color: var(--texto); font-size: 15px; }
+    .evid__ref { display: block; font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 8px; letter-spacing: .04em; }
+
+    /* COMO FUNCIONA */
+    .como { padding: 110px 0; }
+    .passos { margin-top: 60px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; }
+    .passos::before {
+      content: ''; position: absolute; top: 23px; left: 6%; right: 6%; height: 1px; background: var(--linha);
+    }
+    .passo { padding: 0 18px; position: relative; }
+    .passo__dot {
+      width: 46px; height: 46px; border-radius: 50%; background: var(--petroleo); color: var(--bege);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 13px; margin-bottom: 24px; position: relative; z-index: 1;
+    }
+    .passo:nth-child(4) .passo__dot, .passo:nth-child(5) .passo__dot { background: var(--terracota); }
+    .passo h3 { font-size: 22px; margin-bottom: 10px; }
+    .passo p { font-size: 14.5px; color: var(--muted); }
+
+    /* ENTREGÁVEIS */
+    .recebe { background: var(--petroleo); color: var(--bege); padding: 110px 0; }
+    .recebe h2 { color: #fff; }
+    .recebe h2 em { color: #E8A386; }
+    .recebe .lead { color: rgba(231,227,218,.7); }
+    .recebe__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 56px; }
+    .item {
+      background: rgba(255,255,255,0.04); padding: 34px 32px;
+      border-top: 1px solid rgba(217,164,140,0.28); display: flex; gap: 22px;
+    }
+    .item svg { width: 26px; height: 26px; color: #E8A386; flex-shrink: 0; margin-top: 4px; }
+    .item h3 { color: #fff; font-size: 23px; margin-bottom: 8px; }
+    .item p { font-size: 15px; color: rgba(231,227,218,.62); }
+    .recebe__cta { margin-top: 56px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .recebe__cta small { font-family: var(--mono); font-size: 12px; color: rgba(231,227,218,.55); letter-spacing: .04em; }
+
+    /* PARA QUEM */
+    .quem { padding: 110px 0; }
+    .quem__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 48px; }
+    .quem__col { padding: 44px 40px; background: #fff; }
+    .quem__col--nao { background: transparent; border: 1px solid var(--linha); }
+    .quem__col h3 { font-size: 26px; margin-bottom: 22px; }
+    .quem__col ul { list-style: none; display: grid; gap: 14px; }
+    .quem__col li { padding-left: 30px; position: relative; font-size: 15.5px; }
+    .quem__col li::before {
+      content: ''; position: absolute; left: 0; top: 10px; width: 14px; height: 1px; background: var(--terracota);
+    }
+    .quem__col--nao li { color: var(--muted); }
+    .quem__col--nao li::before { background: var(--muted); }
+
+    /* SOBRE */
+    .sobre { background: var(--bege); }
+    .sobre .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; padding: 0; max-width: none; }
+    .sobre__img img { width: 100%; height: 100%; min-height: 560px; object-fit: cover; object-position: center 30%; }
+    .sobre__txt { padding: 96px 72px; max-width: 640px; }
+    .sobre__txt p { color: var(--muted); margin-bottom: 18px; }
+    .sobre__txt p strong { color: var(--texto); font-weight: 500; }
+    .assinatura { font-family: var(--serif); font-style: italic; font-size: 28px; color: var(--terracota); margin-top: 8px; }
+    .creds { margin-top: 28px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .creds span {
+      font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+      border: 1px solid var(--linha); padding: 7px 12px; color: var(--petroleo);
+    }
+
+    /* DEPOIMENTOS */
+    .depo { padding: 110px 0; }
+    .depo__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
+    .depo__card { background: #fff; padding: 36px 30px; }
+    .depo__card p { font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.45; color: var(--petroleo); margin-bottom: 20px; }
+    .depo__card span { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    .depo__print img { width: 100%; height: auto; }
+    .depo__nota { margin-top: 22px; font-size: 13px; color: var(--muted); }
+
+    /* FAQ */
+    .faq { padding: 110px 0; background: #fff; }
+    .faq .wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; }
+    details { border-bottom: 1px solid var(--linha); }
+    details:first-child { border-top: 1px solid var(--linha); }
+    summary {
+      list-style: none; cursor: pointer; padding: 26px 44px 26px 0; position: relative;
+      font-family: var(--serif); font-size: 23px; color: var(--petroleo); line-height: 1.3;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+'; position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+      font-family: var(--sans); font-weight: 300; font-size: 26px; color: var(--terracota); transition: transform .25s;
+    }
+    details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    details > div { padding: 0 0 26px; color: var(--muted); max-width: 640px; }
+    details > div p + p { margin-top: 12px; }
+
+    /* CTA FINAL */
+    .final { background: var(--petroleo); color: var(--bege); padding: 120px 0; text-align: center; position: relative; overflow: hidden; }
+    .final::before {
+      content: ''; position: absolute; right: -140px; top: -140px; width: 440px; height: 440px;
+      border-radius: 50%; border: 1px solid rgba(217,164,140,0.16);
+    }
+    .final h2 { color: #fff; max-width: 820px; margin: 0 auto 22px; font-weight: 300; font-size: clamp(36px, 5vw, 62px); }
+    .final h2 em { color: #E8A386; }
+    .final p { color: rgba(231,227,218,.72); max-width: 600px; margin: 0 auto 44px; font-size: 18px; }
+    .final__btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .final__mini { margin-top: 30px; font-family: var(--mono); font-size: 12px; color: rgba(231,227,218,.5); letter-spacing: .04em; }
+
+    /* FOOTER */
+    footer { background: var(--petroleo); border-top: 1px solid rgba(231,227,218,.1); color: rgba(231,227,218,.55); padding: 56px 0 110px; font-size: 13px; }
+    footer .wrap { display: grid; grid-template-columns: auto 1fr auto; gap: 48px; align-items: center; }
+    footer img { height: 58px; width: auto; }
+    .foot__creds { font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em; line-height: 1.9; }
+    .foot__links { display: flex; gap: 22px; }
+    .foot__links a { text-decoration: none; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; }
+    .foot__links a:hover { color: #E8A386; }
+    .foot__aviso { grid-column: 1 / -1; font-size: 12px; color: rgba(231,227,218,.38); border-top: 1px solid rgba(231,227,218,.08); padding-top: 22px; }
+
+    /* CTA FIXO MOBILE */
+    .sticky-cta {
+      display: none; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60;
+      box-shadow: 0 12px 32px rgba(0,36,61,.35);
+    }
+
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+    /* RESPONSIVO */
+    @media (max-width: 980px) {
+      .wrap { padding: 0 24px; }
+      .nav__links { display: none; }
+      .nav__logo img { height: 42px; }
+      .hero .wrap { grid-template-columns: 1fr; gap: 48px; padding-top: 56px; padding-bottom: 72px; }
+      .hero__photo { max-width: 300px; margin-right: 22px; }
+      .dores, .como, .quem, .depo, .faq, .virada, .recebe { padding: 80px 0; }
+      .dores__grid { grid-template-columns: 1fr; }
+      .virada .wrap { grid-template-columns: 1fr; gap: 44px; }
+      .virada__img { max-width: 420px; }
+      .passos { grid-template-columns: 1fr; gap: 30px; }
+      .passos::before { top: 0; bottom: 0; left: 23px; right: auto; width: 1px; height: auto; }
+      .passo { display: grid; grid-template-columns: 46px 1fr; gap: 0 20px; padding: 0; }
+      .passo__dot { margin: 0; grid-row: span 2; }
+      .recebe__grid { grid-template-columns: 1fr; }
+      .quem__grid { grid-template-columns: 1fr; }
+      .quem__col { padding: 34px 26px; }
+      .sobre .wrap { grid-template-columns: 1fr; }
+      .sobre__img img { min-height: 0; aspect-ratio: 4/5; }
+      .sobre__txt { padding: 64px 24px; }
+      .depo__grid { grid-template-columns: 1fr; }
+      .faq .wrap { grid-template-columns: 1fr; gap: 24px; }
+      .final { padding: 88px 0; }
+      footer .wrap { grid-template-columns: 1fr; gap: 24px; text-align: left; }
+      .sticky-cta { display: flex; }
+      .btn { width: 100%; }
+      nav .btn { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ FAIXA BLACK FRIDAY · apagar este bloco depois de 27/11 ═══ -->
+  <div class="black">
+    <span class="tag">Black Friday</span>
+    A condição especial do Método Constância é revelada <strong>primeiro no grupo VIP</strong>, dia 17/11 às 20h30.
+    <a href="#" data-wa="Oi, Stéfani! Quero entrar no grupo VIP da Black Friday do Método Constância 💛">Quero entrar no grupo</a>
+  </div>
+  <!-- ═══ FIM DA FAIXA BLACK FRIDAY ═══ -->
+
+  <nav>
+    <div class="wrap">
+      <a href="/" class="nav__logo" aria-label="Stéfani Gusmão, página inicial">
+        <img src="img/logo.png" alt="Stéfani Gusmão | Nutrição Estratégica de Alta Performance" width="520" height="254"/>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#o-que-recebe">O que você recebe</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+      <a href="#" class="btn btn--fill" data-wa="Oi, Stéfani! Vim pela página do Método Constância e quero entrar 💛">Quero entrar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow eyebrow--light">Método Constância · 3 meses de acompanhamento</p>
+        <h1>Emagrecer de verdade e construir músculo, <em>sem recomeçar toda segunda-feira.</em></h1>
+        <p class="hero__sub">
+          Se você já fez dieta, já perdeu peso e já viu tudo voltar, o problema nunca foi falta de força de vontade.
+          Faltava estratégia ajustada ao seu corpo, à sua rotina e alguém acompanhando o caminho com você.
+        </p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--fill" data-wa="Oi, Stéfani! Vim pela página do Método Constância e quero começar 💛">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>
+            Quero começar
+          </a>
+          <a href="#como-funciona" class="btn btn--ghost">Ver como funciona</a>
+        </div>
+        <div class="hero__meta">
+          <div><b>3 meses</b>de acompanhamento</div>
+          <div><b>Quinzenal</b>check-in de evolução</div>
+          <div><b>13 anos</b>de consultório</div>
+        </div>
+      </div>
+      <div class="hero__photo">
+        <img src="img/stefani-hero.jpg" alt="Nutricionista Stéfani Gusmão" width="1000" height="1250" fetchpriority="high"/>
+      </div>
+    </div>
+  </header>
+
+  <!-- DORES -->
+  <section class="dores">
+    <div class="wrap">
+      <p class="eyebrow reveal">Você se reconhece aqui?</p>
+      <h2 class="reveal">Você não está cansada de dieta.<br>Está cansada de <em>começar de novo.</em></h2>
+
+      <div class="dores__grid">
+        <div class="dor reveal">
+          <p class="dor__n">01</p>
+          <h3>"Já tentei de tudo e não emagreço"</h3>
+          <p>Low carb, jejum, shake, cortar o pão. Funciona por umas semanas, a balança trava e você volta para o ponto de partida, só que mais desanimada.</p>
+        </div>
+        <div class="dor reveal">
+          <p class="dor__n">02</p>
+          <h3>"Perco peso, mas não ganho músculo"</h3>
+          <p>O número desce e o corpo fica mais mole, não mais firme. Treina, se esforça, e o espelho não acompanha o que você faz na academia.</p>
+        </div>
+        <div class="dor reveal">
+          <p class="dor__n">03</p>
+          <h3>"Uso caneta e mesmo assim travei"</h3>
+          <p>Come pouco, quase sem fome, e o resultado parou. E fica a dúvida: o que estou perdendo é gordura ou é músculo?</p>
+        </div>
+        <div class="dor reveal">
+          <p class="dor__n">04</p>
+          <h3>"Minha rotina não cabe numa dieta"</h3>
+          <p>Trabalho, filho, casa, compromisso. O plano bonito do papel não sobrevive à quarta-feira de uma vida real.</p>
+        </div>
+        <div class="dor reveal">
+          <p class="dor__n">05</p>
+          <h3>"Começo forte e paro na terceira semana"</h3>
+          <p>Um fim de semana sai do roteiro, vem a culpa, e o "segunda eu recomeço" vira um ciclo que já dura anos.</p>
+        </div>
+        <div class="dor reveal">
+          <p class="dor__n">06</p>
+          <h3>"Meu corpo mudou e eu não sei por quê"</h3>
+          <p>O que funcionava aos 25 parou de funcionar. Hormônio, sono, estresse: tudo mexe no resultado e ninguém juntou as peças.</p>
+        </div>
+      </div>
+
+      <p class="dores__fecho reveal">Nenhuma dessas histórias é falta de disciplina. <span>É falta de constância com direção.</span></p>
+    </div>
+  </section>
+
+  <!-- VIRADA + CIÊNCIA -->
+  <section class="virada">
+    <div class="wrap">
+      <div class="virada__img reveal">
+        <img src="img/stefani-atendimento.jpg" alt="Stéfani em atendimento no consultório" width="900" height="1125" loading="lazy"/>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Por que o Método Constância</p>
+        <h2>O resultado não está na dieta perfeita. Está na que <em>você consegue sustentar.</em></h2>
+        <p>
+          Recomposição corporal (perder gordura e construir músculo ao mesmo tempo) não acontece em 21 dias.
+          Acontece quando a estratégia é ajustada conforme o seu corpo responde, e quando você não fica sozinha
+          nas semanas difíceis.
+        </p>
+        <p>É exatamente isso que a ciência mostra:</p>
+
+        <div class="evid">
+          <div class="evid__item">
+            <p>Comparando dietas populares por um ano, o que mais previu a perda de peso não foi o tipo de dieta. Foi o quanto a pessoa conseguiu seguir.</p>
+            <span class="evid__ref">Dansinger et al., JAMA, 2005</span>
+          </div>
+          <div class="evid__item">
+            <p>Proteína bem distribuída somada ao treino de força aumenta o ganho de massa magra, com benefício observado até cerca de 1,6 g por kg de peso ao dia (a necessidade real varia de pessoa para pessoa).</p>
+            <span class="evid__ref">Morton et al., British Journal of Sports Medicine, 2018 (meta-análise)</span>
+          </div>
+          <div class="evid__item">
+            <p>Contato frequente com um profissional ao longo do processo está associado a manter o peso perdido por mais tempo, em vez de recuperar.</p>
+            <span class="evid__ref">Wing et al., New England Journal of Medicine, 2006</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="como" id="como-funciona">
+    <div class="wrap">
+      <p class="eyebrow reveal">Como funciona</p>
+      <h2 class="reveal">Três meses, um caminho claro <em>do início ao fim.</em></h2>
+      <p class="lead reveal">Nada de receber um plano e se virar sozinha. Cada etapa existe para você saber exatamente o que fazer e por quê.</p>
+
+      <div class="passos">
+        <div class="passo reveal">
+          <div class="passo__dot">01</div>
+          <h3>Conversa estratégica</h3>
+          <p>Antes de tudo, a gente conversa. Entendo sua história, o que já tentou e onde trava, para ter certeza de que o método é para você.</p>
+        </div>
+        <div class="passo reveal">
+          <div class="passo__dot">02</div>
+          <h3>Consulta completa</h3>
+          <p>Avaliação de composição corporal, hábitos, rotina, treino, sono, exames e histórico. É aqui que a estratégia nasce.</p>
+        </div>
+        <div class="passo reveal">
+          <div class="passo__dot">03</div>
+          <h3>Plano individualizado</h3>
+          <p>Plano alimentar feito para o seu objetivo e para a sua vida real, com comida que você gosta e consegue repetir.</p>
+        </div>
+        <div class="passo reveal">
+          <div class="passo__dot">04</div>
+          <h3>Check-ins quinzenais</h3>
+          <p>A cada 15 dias você registra sua evolução no app. Eu analiso e ajusto antes que o resultado trave.</p>
+        </div>
+        <div class="passo reveal">
+          <div class="passo__dot">05</div>
+          <h3>Consultas mensais</h3>
+          <p>Uma consulta por mês, três ao todo, para reavaliar o corpo, medir a evolução e recalibrar a estratégia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section class="recebe" id="o-que-recebe">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--light reveal">O que você recebe</p>
+      <h2 class="reveal">Tudo pensado para você <em>não desistir no meio.</em></h2>
+      <p class="lead reveal">O Método Constância é um acompanhamento, não um cardápio. A diferença está no que acontece entre uma consulta e outra.</p>
+
+      <div class="recebe__grid">
+        <div class="item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M9 8h2m-4-5h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/></svg>
+          <div><h3>Consulta inicial completa</h3><p>Avaliação física, histórico, rotina, treino, sono e análise de exames para entender o seu ponto de partida de verdade.</p></div>
+        </div>
+        <div class="item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/><circle cx="12" cy="12" r="9"/></svg>
+          <div><h3>Plano alimentar estratégico</h3><p>Focado em perder gordura e preservar (ou construir) músculo, com substituições e opções para a rotina corrida.</p></div>
+        </div>
+        <div class="item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg>
+          <div><h3>3 consultas mensais</h3><p>Reavaliação da composição corporal e ajuste da estratégia a cada mês, de acordo com a resposta do seu corpo.</p></div>
+        </div>
+        <div class="item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path stroke-linecap="round" d="M10.5 18.5h3"/></svg>
+          <div><h3>Check-ins quinzenais no app</h3><p>Acompanhamento pelo aplicativo entre as consultas, para corrigir a rota cedo e não perder semanas.</p></div>
+        </div>
+        <div class="item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9.5 3h5M10 3v5.5L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9.5V3"/></svg>
+          <div><h3>Suplementação quando faz sentido</h3><p>Prescrição de suplementos ou manipulados só quando há indicação para o seu caso. Nada de lista pronta.</p></div>
+        </div>
+        <div class="item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-4.4-7-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 16.6 12 21 12 21Z"/></svg>
+          <div><h3>Estratégia para a vida real</h3><p>Festas, viagens, fim de semana, dia corrido. Você aprende a decidir sem culpa e sem precisar recomeçar.</p></div>
+        </div>
+      </div>
+
+      <div class="recebe__cta reveal">
+        <a href="#" class="btn btn--fill" data-wa="Oi, Stéfani! Li tudo sobre o Método Constância e quero garantir minha vaga 💛">Quero garantir minha vaga</a>
+        <small>Vagas limitadas para manter o acompanhamento próximo.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="quem">
+    <div class="wrap">
+      <p class="eyebrow reveal">Para quem é</p>
+      <h2 class="reveal">Feito para quem quer resultado <em>que fica.</em></h2>
+      <div class="quem__grid">
+        <div class="quem__col reveal">
+          <h3>É para você se…</h3>
+          <ul>
+            <li>Quer emagrecer perdendo gordura, não músculo</li>
+            <li>Treina (ou quer começar) e quer ver o corpo responder ao esforço</li>
+            <li>Está cansada do efeito sanfona e quer algo que dure</li>
+            <li>Usa ou já usou caneta e quer preservar massa muscular</li>
+            <li>Tem uma rotina cheia e precisa de um plano que caiba nela</li>
+            <li>Sente que o corpo mudou com os hormônios e quer entender o que fazer agora</li>
+          </ul>
+        </div>
+        <div class="quem__col quem__col--nao reveal">
+          <h3>Não é para você se…</h3>
+          <ul>
+            <li>Procura uma dieta pronta para seguir sozinha</li>
+            <li>Quer um resultado rápido a qualquer custo</li>
+            <li>Não está disposta a fazer os check-ins e conversar sobre o processo</li>
+            <li>Busca promessa de quantos quilos vai perder em quantos dias (isso, eu não faço)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="wrap">
+      <div class="sobre__img">
+        <img src="img/consultorio.jpg" alt="Consultório da nutricionista Stéfani Gusmão em São José dos Campos" width="1100" height="1467" loading="lazy"/>
+      </div>
+      <div class="sobre__txt reveal">
+        <p class="eyebrow">Quem vai te acompanhar</p>
+        <h2>Prazer, eu sou a <em>Stéfani.</em></h2>
+        <p>
+          Sou alagoana, fui professora universitária e há <strong>13 anos</strong> atendo mulheres que querem
+          emagrecer de verdade, ganhar massa muscular e parar de viver em ciclo de dieta.
+        </p>
+        <p>
+          Treino todos os dias, é o meu ponto de equilíbrio. Convivo com três doenças autoimunes e uso a nutrição como base
+          do meu cuidado. Então eu sei, na prática, o que é ter um corpo que nem sempre responde como a gente espera.
+        </p>
+        <p>
+          Sou mãe, cuido do consultório e de uma rotina cheia. Por isso nenhum plano meu nasce bonito no papel e
+          impossível na vida real. <strong>Constância é o que transforma o corpo.</strong> E constância se constrói com direção.
+        </p>
+        <p class="assinatura">Stéfani Gusmão</p>
+        <div class="creds">
+          <span>Nutricionista CRN3 42566</span>
+          <span>Nutrição funcional</span>
+          <span>Emagrecimento e recomposição</span>
+          <span>Alta performance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    ═══ DEPOIMENTOS ═══
+    Seção escondida até entrarem depoimentos reais e autorizados.
+    Para ativar: apague a palavra "hidden" da linha <section class="depo" hidden>,
+    troque o texto de cada card e o nome (ou só a inicial) da paciente.
+    Para usar prints: coloque a imagem em /metodo-constancia/img/ e use o card "depo__print" de exemplo.
+  -->
+  <section class="depo" hidden>
+    <div class="wrap">
+      <p class="eyebrow reveal">Quem já passou pelo método</p>
+      <h2 class="reveal">Resultados reais, <em>de mulheres reais.</em></h2>
+      <div class="depo__grid">
+        <div class="depo__card reveal">
+          <p>"Texto do depoimento 1, com as palavras da própria paciente."</p>
+          <span>Nome ou inicial · objetivo</span>
+        </div>
+        <div class="depo__card reveal">
+          <p>"Texto do depoimento 2."</p>
+          <span>Nome ou inicial · objetivo</span>
+        </div>
+        <div class="depo__card depo__print reveal">
+          <img src="img/depoimento-1.jpg" alt="Depoimento de paciente" loading="lazy"/>
+        </div>
+      </div>
+      <p class="depo__nota reveal">Depoimentos publicados com autorização das pacientes. Resultados variam de pessoa para pessoa.</p>
+    </div>
+  </section>
+
+  <!-- FAQ / OBJEÇÕES -->
+  <section class="faq" id="duvidas">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Dúvidas</p>
+        <h2>Antes de você <em>decidir.</em></h2>
+        <p style="color:var(--muted);margin-bottom:28px">Ficou alguma pergunta que não está aqui? Me chama, eu respondo pessoalmente.</p>
+        <a href="#" class="btn btn--outline" data-wa="Oi, Stéfani! Tenho uma dúvida sobre o Método Constância antes de decidir">Tirar uma dúvida</a>
+      </div>
+      <div class="reveal">
+        <details>
+          <summary>Já tentei de tudo e não emagreço. Por que agora seria diferente?</summary>
+          <div><p>Porque "tudo" geralmente foi um plano genérico, seguido sozinha, sem ajuste. Aqui a estratégia muda conforme o seu corpo responde, e os check-ins quinzenais existem justamente para identificar o que está travando antes que você desanime.</p></div>
+        </details>
+        <details>
+          <summary>Perco peso, mas não ganho músculo. O método resolve isso?</summary>
+          <div><p>Esse é o centro do método. O plano é montado para perder gordura preservando e construindo massa muscular, com proteína ajustada, distribuição ao longo do dia e alinhamento com o seu treino. Por isso a gente acompanha composição corporal, não só a balança.</p></div>
+        </details>
+        <details>
+          <summary>Uso caneta (GLP-1). Faz sentido ter acompanhamento?</summary>
+          <div><p>Faz, e muito. Com a fome reduzida, é comum comer pouca proteína e perder massa muscular junto com a gordura. O acompanhamento ajuda a proteger o músculo, organizar a alimentação e construir hábitos que sustentam o resultado.</p><p>Não faço prescrição nem ajuste de medicamento. Isso continua com o seu médico.</p></div>
+        </details>
+        <details>
+          <summary>Não tenho tempo. Vou conseguir seguir?</summary>
+          <div><p>O plano é construído em cima da sua rotina, não o contrário. Se você almoça fora, viaja ou tem dias caóticos, isso entra na estratégia desde a primeira consulta.</p></div>
+        </details>
+        <details>
+          <summary>Não tenho disciplina. E se eu sair da linha?</summary>
+          <div><p>Você vai sair da linha em algum momento, e está tudo bem. O método não depende de perfeição, depende de voltar rápido. É para isso que existe acompanhamento: para o deslize de um dia não virar um mês perdido.</p></div>
+        </details>
+        <details>
+          <summary>Acompanhamento não é caro?</summary>
+          <div><p>Faça a conta de quanto já foi gasto em dieta da moda, suplemento que não precisava, academia sem resultado e recomeços. Três meses com direção costumam sair mais baratos do que mais um ano tentando sozinha.</p><p>Os valores e as formas de pagamento (Pix ou cartão) eu passo direto para você no WhatsApp.</p></div>
+        </details>
+        <details>
+          <summary>Estou na perimenopausa. O método serve para mim?</summary>
+          <div><p>Serve. As mudanças hormonais mexem com composição corporal, sono e apetite, e isso entra na estratégia. O foco continua o mesmo: perder gordura e manter (ou ganhar) músculo, com ajustes para essa fase.</p></div>
+        </details>
+        <details>
+          <summary>Vou ter resultado garantido?</summary>
+          <div><p>Nenhum profissional sério garante quilos em prazo, e eu não vou ser a primeira. O que eu garanto é estratégia individualizada, acompanhamento próximo e ajustes ao longo dos três meses. O resultado vem da soma disso com a sua participação.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--light reveal">Seu próximo passo</p>
+      <h2 class="reveal">Começar agora ou chegar em janeiro <em>no mesmo lugar?</em></h2>
+      <p class="reveal">Começar agora é atravessar as festas com estratégia e entrar no ano novo já no meio do processo, não no ponto de partida.</p>
+      <div class="final__btns reveal">
+        <a href="#" class="btn btn--fill" data-wa="Oi, Stéfani! Decidi: quero entrar no Método Constância 💛">Quero entrar no Método Constância</a>
+        <a href="#" class="btn btn--ghost" data-wa="Oi, Stéfani! Ainda tenho uma dúvida sobre o Método Constância">Ainda tenho uma dúvida</a>
+      </div>
+      <p class="final__mini reveal">Atendimento em São José dos Campos · WhatsApp (12) 99724-9076</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <img src="img/logo.png" alt="Stéfani Gusmão" width="520" height="254" loading="lazy"/>
+      <div class="foot__creds">
+        Stéfani Gusmão · Nutricionista CRN3 42566<br>
+        Nutrição Estratégica de Alta Performance<br>
+        Jardim Aquarius · São José dos Campos/SP
+      </div>
+      <div class="foot__links">
+        <a href="/">Site</a>
+        <a href="https://instagram.com/stefanigusmao.nutri" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" data-wa="Oi, Stéfani! Vim pela página do Método Constância">WhatsApp</a>
+      </div>
+      <p class="foot__aviso">Resultados variam de pessoa para pessoa e dependem de fatores individuais. Este conteúdo não substitui avaliação profissional. © 2026 Stéfani Gusmão.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="btn btn--fill sticky-cta" data-wa="Oi, Stéfani! Vim pela página do Método Constância e quero entrar 💛">Quero entrar no Método Constância</a>
+
+  <script>
+    // Links de WhatsApp: a mensagem pronta fica no atributo data-wa de cada botão
+    var WA = 'https://wa.me/5512997249076';
+    document.querySelectorAll('[data-wa]').forEach(function (a) {
+      a.href = WA + '?text=' + encodeURIComponent(a.getAttribute('data-wa'));
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
+
+    // Animação de entrada
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
+    }
+  </script>
+</body>
+</html>
