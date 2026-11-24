@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Black Friday Método Constância | Stéfani Gusmão</title>
+  <meta name="description" content="Condição de Black Friday do Método Constância: 3 meses de acompanhamento nutricional para emagrecer de verdade e ganhar massa muscular."/>
+  <!-- Página exclusiva da oferta: fora do Google e sem link no site principal -->
+  <meta name="robots" content="noindex, nofollow"/>
+  <meta property="og:title" content="Black Friday | Método Constância"/>
+  <meta property="og:description" content="3 meses de acompanhamento para emagrecer de verdade e construir músculo. Condição especial de Black Friday."/>
+  <meta property="og:image" content="https://nutristefanigusmao.com.br/metodo-constancia/img/stefani-hero.jpg"/>
+  <meta name="theme-color" content="#003152"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --petroleo: #003152; --petroleo2: #00243D;
+      --terracota: #AF4E2E; --terra-esc: #943F23; --terra-clara: #E8A386;
+      --bege: #E7E3DA; --creme: #F7F4EE;
+      --texto: #26303A; --muted: #6B6F72; --linha: rgba(175,78,46,0.22);
+      --serif: 'Classic Roman Std', 'Cormorant Garamond', Georgia, serif;
+      --mono: 'DM Mono', ui-monospace, monospace;
+      --sans: 'Jost', system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--creme); color: var(--texto); font-family: var(--sans); font-weight: 300; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+    .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: var(--terracota); margin-bottom: 18px; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.12; color: var(--petroleo); }
+    h2 { font-size: clamp(32px, 4.2vw, 50px); margin-bottom: 20px; }
+    h2 em { font-style: italic; color: var(--terracota); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--sans); font-weight: 500; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; padding: 18px 28px; border: 1px solid transparent; cursor: pointer; transition: background .25s, transform .25s, color .25s; }
+    .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .btn--fill { background: var(--terracota); color: #fff; }
+    .btn--fill:hover { background: var(--terra-esc); transform: translateY(-2px); }
+    .btn--petroleo { background: var(--petroleo); color: #fff; }
+    .btn--petroleo:hover { background: var(--petroleo2); transform: translateY(-2px); }
+    .btn--line { border-color: var(--petroleo); color: var(--petroleo); background: transparent; }
+    .btn--line:hover { background: var(--petroleo); color: #fff; }
+
+    /* TOPO */
+    .topo { background: #0E0E0E; color: var(--bege); text-align: center; padding: 12px 16px; font-size: 13.5px; }
+    .topo b { color: var(--terra-clara); font-weight: 500; }
+    nav { background: var(--petroleo); }
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 74px; }
+    nav img { height: 50px; width: auto; }
+    nav a.btn { padding: 12px 20px; font-size: 11px; }
+
+    /* HERO */
+    .hero { background: var(--petroleo); color: var(--bege); position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; right: -160px; top: -120px; width: 460px; height: 460px; border-radius: 50%; border: 1px solid rgba(232,163,134,.16); }
+    .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; padding-top: 72px; padding-bottom: 80px; position: relative; }
+    .selo { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: .26em; text-transform: uppercase; background: var(--terracota); color: #fff; padding: 7px 14px; margin-bottom: 26px; }
+    .hero h1 { color: #fff; font-weight: 300; font-size: clamp(38px, 5.2vw, 64px); margin-bottom: 24px; }
+    .hero h1 em { color: var(--terra-clara); font-style: italic; }
+    .hero p { font-size: 18px; color: rgba(231,227,218,.76); max-width: 540px; margin-bottom: 36px; }
+    .hero__preco { display: flex; gap: 36px; flex-wrap: wrap; margin-bottom: 36px; padding: 22px 0; border-top: 1px solid rgba(231,227,218,.14); border-bottom: 1px solid rgba(231,227,218,.14); max-width: 540px; }
+    .hero__preco div { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; color: rgba(231,227,218,.6); }
+    .hero__preco b { display: block; font-family: var(--serif); font-weight: 400; font-size: 34px; color: #fff; letter-spacing: 0; line-height: 1.15; }
+    .hero__foto img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 20%; }
+
+    /* INCLUSO */
+    .incluso { padding: 96px 0; }
+    .incluso__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--linha); border: 1px solid var(--linha); margin-top: 44px; }
+    .inc { background: var(--creme); padding: 34px 30px; }
+    .inc__n { font-family: var(--mono); font-size: 12px; color: var(--terracota); letter-spacing: .2em; margin-bottom: 14px; }
+    .inc h3 { font-size: 23px; margin-bottom: 8px; }
+    .inc p { font-size: 15px; color: var(--muted); }
+
+    /* PAGAMENTO */
+    .pagar { background: var(--bege); padding: 96px 0; }
+    .pagar__head { text-align: center; max-width: 720px; margin: 0 auto 52px; }
+    .pagar__head p { color: var(--muted); font-size: 17px; }
+    .planos { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+    .plano { background: #fff; padding: 44px 40px; display: flex; flex-direction: column; position: relative; }
+    .plano--pix { border: 2px solid var(--terracota); }
+    .plano__tag { position: absolute; top: -14px; left: 40px; font-family: var(--mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; background: var(--terracota); color: #fff; padding: 5px 12px; }
+    .plano__tipo { font-family: var(--mono); font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+    .plano__valor { font-family: var(--serif); color: var(--petroleo); font-size: 58px; line-height: 1; margin-bottom: 8px; }
+    .plano__valor small { font-size: 26px; }
+    .plano__det { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+    .plano ul { list-style: none; display: grid; gap: 10px; margin-bottom: 32px; }
+    .plano li { padding-left: 26px; position: relative; font-size: 15px; }
+    .plano li::before { content: ''; position: absolute; left: 0; top: 11px; width: 13px; height: 1px; background: var(--terracota); }
+    .plano .btn { width: 100%; margin-top: auto; }
+    .pix-box { display: grid; grid-template-columns: 150px 1fr; gap: 20px; align-items: center; background: var(--creme); padding: 18px; margin-bottom: 18px; }
+    .pix-box img { width: 150px; height: 150px; }
+    .pix-box p { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+    .pix-code { font-family: var(--mono); font-size: 11px; color: var(--muted); word-break: break-all; background: var(--creme); padding: 12px 14px; margin-bottom: 14px; max-height: 64px; overflow: hidden; user-select: all; }
+    .copiado { display: none; text-align: center; font-family: var(--mono); font-size: 12px; color: var(--terracota); margin-top: 10px; }
+    .copiado.on { display: block; }
+    .seguro { text-align: center; margin-top: 28px; font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+
+    /* DEPOIS */
+    .depois { padding: 96px 0; }
+    .passos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 44px; }
+    .passo__n { width: 44px; height: 44px; border-radius: 50%; background: var(--petroleo); color: var(--bege); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; margin-bottom: 18px; }
+    .passo h3 { font-size: 21px; margin-bottom: 8px; }
+    .passo p { font-size: 14.5px; color: var(--muted); }
+    .depois__cta { margin-top: 44px; }
+
+    /* FAQ */
+    .faq { background: #fff; padding: 96px 0; }
+    .faq .wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; }
+    details { border-bottom: 1px solid var(--linha); }
+    details:first-child { border-top: 1px solid var(--linha); }
+    summary { list-style: none; cursor: pointer; padding: 22px 40px 22px 0; position: relative; font-family: var(--serif); font-size: 22px; color: var(--petroleo); line-height: 1.3; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-family: var(--sans); font-size: 24px; color: var(--terracota); transition: transform .25s; }
+    details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    details > div { padding: 0 0 22px; color: var(--muted); }
+
+    /* FINAL */
+    .final { background: var(--petroleo); color: var(--bege); text-align: center; padding: 96px 0; }
+    .final h2 { color: #fff; font-weight: 300; max-width: 760px; margin: 0 auto 18px; }
+    .final h2 em { color: var(--terra-clara); }
+    .final p { color: rgba(231,227,218,.72); max-width: 560px; margin: 0 auto 36px; font-size: 17px; }
+    .final__btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .final .btn--line { border-color: rgba(231,227,218,.45); color: var(--bege); }
+    .final .btn--line:hover { background: rgba(231,227,218,.08); }
+
+    footer { background: var(--petroleo); border-top: 1px solid rgba(231,227,218,.1); color: rgba(231,227,218,.55); padding: 44px 0 110px; }
+    footer .wrap { display: flex; gap: 36px; align-items: center; flex-wrap: wrap; }
+    footer img { height: 54px; width: auto; }
+    .foot__creds { font-family: var(--mono); font-size: 11.5px; letter-spacing: .05em; line-height: 1.9; }
+    .foot__aviso { width: 100%; font-size: 12px; color: rgba(231,227,218,.38); border-top: 1px solid rgba(231,227,218,.08); padding-top: 18px; }
+
+    .sticky { display: none; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; box-shadow: 0 12px 32px rgba(0,36,61,.35); }
+
+    @media (max-width: 920px) {
+      .wrap { padding: 0 22px; }
+      nav img { height: 40px; }
+      .hero .wrap { grid-template-columns: 1fr; gap: 40px; padding-top: 48px; padding-bottom: 64px; }
+      .hero__foto { max-width: 280px; }
+      .incluso, .pagar, .depois, .faq, .final { padding: 72px 0; }
+      .incluso__grid { grid-template-columns: 1fr; }
+      .planos { grid-template-columns: 1fr; gap: 36px; }
+      .plano { padding: 40px 24px 30px; }
+      .plano__tag { left: 24px; }
+      .pix-box { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+      .pix-box img { width: 190px; height: 190px; }
+      .passos { grid-template-columns: 1fr; }
+      .faq .wrap { grid-template-columns: 1fr; gap: 20px; }
+      .btn { width: 100%; }
+      nav a.btn { width: auto; }
+      .sticky { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topo">Black Friday do Método Constância · <b>vagas limitadas</b> e bônus por ordem de pagamento</div>
+
+  <nav>
+    <div class="wrap">
+      <img src="../metodo-constancia/img/logo.png" alt="Stéfani Gusmão | Nutrição Estratégica de Alta Performance" width="520" height="254"/>
+      <a href="#pagamento" class="btn btn--fill">Garantir vaga</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div>
+        <span class="selo">Black Friday 2026</span>
+        <h1>3 meses para emagrecer de verdade e <em>construir músculo,</em> com alguém do seu lado.</h1>
+        <p>O Método Constância completo, com a condição especial de Black Friday. Você atravessa as festas com estratégia e começa o ano já no meio do processo, não no ponto de partida.</p>
+        <div class="hero__preco">
+          <div><b>R$ 899</b>à vista no Pix</div>
+          <div><b>4x R$ 262,50</b>no cartão de crédito</div>
+        </div>
+        <a href="#pagamento" class="btn btn--fill">Quero garantir minha vaga</a>
+      </div>
+      <div class="hero__foto">
+        <img src="../metodo-constancia/img/stefani-hero.jpg" alt="Nutricionista Stéfani Gusmão" width="1000" height="1250" fetchpriority="high"/>
+      </div>
+    </div>
+  </header>
+
+  <section class="incluso">
+    <div class="wrap">
+      <p class="eyebrow">O que está incluso</p>
+      <h2>Tudo o que você recebe <em>nos 3 meses.</em></h2>
+      <div class="incluso__grid">
+        <div class="inc"><p class="inc__n">01</p><h3>Consulta inicial completa</h3><p>Avaliação de composição corporal, histórico, rotina, treino, sono e exames.</p></div>
+        <div class="inc"><p class="inc__n">02</p><h3>Plano alimentar estratégico</h3><p>Para perder gordura e preservar (ou construir) músculo, feito para a sua vida real.</p></div>
+        <div class="inc"><p class="inc__n">03</p><h3>3 consultas mensais</h3><p>Uma por mês, para reavaliar o corpo e recalibrar a estratégia.</p></div>
+        <div class="inc"><p class="inc__n">04</p><h3>Check-ins quinzenais no app</h3><p>A cada 15 dias eu analiso sua evolução e ajusto antes que o resultado trave.</p></div>
+        <div class="inc"><p class="inc__n">05</p><h3>Presencial ou online</h3><p>No consultório no Jardim Aquarius, em São José dos Campos, ou online de qualquer lugar do Brasil.</p></div>
+        <div class="inc"><p class="inc__n">06</p><h3>Bônus da Black</h3><p>Distribuídos por ordem de confirmação do pagamento, conforme apresentado no grupo VIP.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pagar" id="pagamento">
+    <div class="wrap">
+      <div class="pagar__head">
+        <p class="eyebrow">Escolha como pagar</p>
+        <h2>Garanta sua vaga <em>agora.</em></h2>
+        <p>Os bônus seguem a ordem de confirmação do pagamento. Quanto antes você garantir, maiores as chances de entrar nas primeiras faixas.</p>
+      </div>
+
+      <div class="planos">
+        <div class="plano plano--pix">
+          <span class="plano__tag">Melhor condição</span>
+          <p class="plano__tipo">Pix à vista</p>
+          <p class="plano__valor"><small>R$</small> 899</p>
+          <p class="plano__det">pagamento único · economia de R$ 151</p>
+          <div class="pix-box">
+            <img src="pix-qrcode.png" alt="QR Code Pix de R$ 899,00" width="530" height="530"/>
+            <p>Abra o app do seu banco, escolha <b>Pix &gt; Ler QR Code</b> e aponte para o código. Se estiver no celular, use o botão abaixo para copiar o código.</p>
+          </div>
+          <div class="pix-code" id="pixCode">00020126580014BR.GOV.BCB.PIX01369947ab36-3e53-4e57-a5fd-4552cc9ae4815204000053039865406899.005802BR5924Stefani Patricia Tenorio6009SAO PAULO62140510D94PHpXxBh63048D89</div>
+          <button type="button" class="btn btn--fill" id="copiarPix">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            Copiar código Pix
+          </button>
+          <p class="copiado" id="copiadoMsg">Código copiado! Agora é só colar no Pix copia e cola do seu banco.</p>
+        </div>
+
+        <div class="plano">
+          <p class="plano__tipo">Cartão de crédito</p>
+          <p class="plano__valor"><small>4x R$</small> 262,50</p>
+          <p class="plano__det">total de R$ 1.050,00 · sem precisar de Pix</p>
+          <ul>
+            <li>Pagamento seguro pela InfinitePay</li>
+            <li>Parcele em até 4 vezes no cartão</li>
+            <li>Confirmação na hora do pagamento</li>
+            <li>Mesmo acompanhamento completo de 3 meses</li>
+          </ul>
+          <a href="https://link.infinitepay.io/stefanigusmaonutri/VC1DLTQtSQ-we7r1m1fdE-1050,00" target="_blank" rel="noopener" class="btn btn--petroleo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg>
+            Pagar no cartão
+          </a>
+        </div>
+      </div>
+      <p class="seguro">Depois de pagar, me envie o comprovante no WhatsApp para garantir sua vaga e o seu bônus.</p>
+    </div>
+  </section>
+
+  <section class="depois">
+    <div class="wrap">
+      <p class="eyebrow">Depois do pagamento</p>
+      <h2>O que acontece <em>a seguir.</em></h2>
+      <div class="passos">
+        <div class="passo"><div class="passo__n">01</div><h3>Envie o comprovante</h3><p>Manda no meu WhatsApp. É assim que eu registro a ordem para os bônus.</p></div>
+        <div class="passo"><div class="passo__n">02</div><h3>Cadastro no app</h3><p>Você recebe o acesso ao aplicativo onde acontecem os check-ins quinzenais.</p></div>
+        <div class="passo"><div class="passo__n">03</div><h3>Marcamos a consulta</h3><p>Escolhemos juntas o melhor horário, presencial ou online.</p></div>
+        <div class="passo"><div class="passo__n">04</div><h3>Começa o método</h3><p>Avaliação completa, plano estratégico e acompanhamento por 3 meses.</p></div>
+      </div>
+      <div class="depois__cta">
+        <a href="#" class="btn btn--line" data-wa="Oi, Stéfani! Acabei de fazer o pagamento da Black do Método Constância, segue o comprovante 💛">Já paguei, enviar comprovante</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Dúvidas rápidas</p>
+        <h2>Antes de <em>pagar.</em></h2>
+        <p style="color:var(--muted);margin-bottom:26px">Ficou alguma dúvida? Me chama que eu respondo pessoalmente.</p>
+        <a href="#" class="btn btn--line" data-wa="Oi, Stéfani! Tenho uma dúvida sobre a Black do Método Constância">Tirar uma dúvida</a>
+      </div>
+      <div>
+        <details><summary>Quando eu começo?</summary><div>Assim que o pagamento é confirmado, marcamos sua consulta inicial. Eu continuo atendendo em dezembro, então você não precisa esperar janeiro para começar.</div></details>
+        <details><summary>Posso fazer online?</summary><div>Pode. Atendo presencialmente no consultório em São José dos Campos e online para todo o Brasil, com o mesmo acompanhamento.</div></details>
+        <details><summary>Uso caneta (GLP-1). Serve para mim?</summary><div>Serve, e ajuda muito a proteger sua massa muscular durante o emagrecimento. Não faço prescrição nem ajuste de medicamento, isso continua com o seu médico.</div></details>
+        <details><summary>Como funcionam os bônus?</summary><div>Os bônus são distribuídos por ordem de confirmação do pagamento, nas faixas apresentadas no grupo VIP. Por isso é importante enviar o comprovante logo depois de pagar.</div></details>
+        <details><summary>Qual a diferença entre Pix e cartão?</summary><div>O acompanhamento é exatamente o mesmo. No Pix à vista você paga R$ 899. No cartão, são 4 parcelas de R$ 262,50 (total de R$ 1.050).</div></details>
+        <details><summary>Tem resultado garantido?</summary><div>Nenhum profissional sério garante quilos em prazo. O que eu garanto é estratégia individualizada, acompanhamento próximo e ajustes durante os 3 meses. Resultados variam de pessoa para pessoa.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Pix ou cartão: <em>qual vai ser o seu?</em></h2>
+      <p>As vagas são limitadas para eu conseguir acompanhar cada paciente de perto.</p>
+      <div class="final__btns">
+        <a href="#pagamento" class="btn btn--fill">Pagar no Pix · R$ 899</a>
+        <a href="https://link.infinitepay.io/stefanigusmaonutri/VC1DLTQtSQ-we7r1m1fdE-1050,00" target="_blank" rel="noopener" class="btn btn--line">Cartão · 4x R$ 262,50</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <img src="../metodo-constancia/img/logo.png" alt="Stéfani Gusmão" width="520" height="254" loading="lazy"/>
+      <div class="foot__creds">Stéfani Gusmão · Nutricionista CRN3 42566<br>Jardim Aquarius · São José dos Campos/SP · WhatsApp (12) 99724-9076</div>
+      <p class="foot__aviso">Resultados variam de pessoa para pessoa e dependem de fatores individuais. © 2026 Stéfani Gusmão.</p>
+    </div>
+  </footer>
+
+  <a href="#pagamento" class="btn btn--fill sticky">Garantir minha vaga</a>
+
+  <script>
+    var WA = 'https://wa.me/5512997249076';
+    document.querySelectorAll('[data-wa]').forEach(function (a) {
+      a.href = WA + '?text=' + encodeURIComponent(a.getAttribute('data-wa'));
+      a.target = '_blank'; a.rel = 'noopener';
+    });
+
+    var codigo = document.getElementById('pixCode').textContent.trim();
+    document.getElementById('copiarPix').addEventListener('click', function () {
+      function ok() { document.getElementById('copiadoMsg').classList.add('on'); }
+      function fallback() {
+        var r = document.createRange(); r.selectNodeContents(document.getElementById('pixCode'));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        try { document.execCommand('copy'); ok(); } catch (e) {}
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(codigo).then(ok, fallback);
+      } else { fallback(); }
+    });
+  </script>
+</body>
+</html>
